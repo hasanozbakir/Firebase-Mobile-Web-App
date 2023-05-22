@@ -22,7 +22,7 @@ addButtonEl.addEventListener("click", function() {
 })
 
 inputFieldEl.addEventListener("input", function () {
-    inputFieldEl.value = inputFieldEl.value.trim()
+    inputFieldEl.value = inputFieldEl.value.trim() ? inputFieldEl.value: inputFieldEl.value.trim()
 })
 
 onValue(shoppingListInDB, function(snapshot) {
